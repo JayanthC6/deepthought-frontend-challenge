@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepThought | Frontend Challenge</title>
+    <meta name="description" content="DeepThought Frontend Challenge - Dynamic Project Management Interface">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="DeepThought Logo" class="logo">
+            <div class="nav-icons">
+                <div class="icon-circle" title="Home">🏠</div>
+                <div class="icon-circle" title="Tools">🛠️</div>
+                <div class="icon-circle" title="Notifications">🔔</div>
+                <div class="profile-pic" title="Profile"></div>
+                <div class="icon-more" title="More options">⋮</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+
+        <!-- Journey Board (Sidebar) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span id="sidebar-title">Journey Board</span>
+                <button onclick="toggleSidebar()" class="toggle-btn" id="toggle-btn"
+                    aria-label="Toggle sidebar">➡️</button>
+            </div>
+            <div class="sidebar-content" id="sidebar-content">
+                <ul id="journey-list">
+                    <!-- Tasks will be dynamically populated here -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <div class="content-header">
+                <h1 id="main-project-title" class="title-blue">Loading...</h1>
+                <button class="submit-btn">Submit Task</button>
+            </div>
+
+            <div class="intro-section">
+                <h2 id="task-title">Loading task...</h2>
+                <p id="task-description">Please wait while we load the content...</p>
+            </div>
+
+            <!-- Asset Cards Container -->
+            <div class="asset-grid" id="asset-container">
+                <!-- Asset cards will be dynamically populated here -->
+            </div>
+        </main>
+
+        <!-- Notice Board -->
+        <aside class="notice-board">
+            <div class="notice-handle">
+                <span>✖</span>
+                <p>N<br>o<br>t<br>i<br>c<br>e<br><br>B<br>o<br>a<br>r<br>d</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
